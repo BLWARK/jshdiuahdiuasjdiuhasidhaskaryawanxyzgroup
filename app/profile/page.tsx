@@ -99,7 +99,7 @@ const ProfilePage = () => {
               />
             </a>
             <a
-              href="https://twitter.com"
+              href={`${employee.twitter}`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10"
@@ -112,7 +112,7 @@ const ProfilePage = () => {
               />
             </a>
             <a
-              href="https://linkedin.com"
+              href={`${employee.linkedin}`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10"
@@ -124,6 +124,20 @@ const ProfilePage = () => {
                 height={40}
               />
             </a>
+            <a
+              href={`mailto:${employee.email}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10"
+            >
+              <Image
+                src="/Email.png" // Path gambar LinkedIn
+                alt="Email"
+                width={40}
+                height={40}
+              />
+            </a>
+            
           </div>
 
           {/* Garis Pemisah */}
@@ -160,18 +174,18 @@ const ProfilePage = () => {
               Whatsapp
             </a>
             <a
-              href={`mailto:${employee.email}`}
+              href="https://xyzgroup.co.id"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white  w-[380px] h-[65px] flex justify-center items-center mt-5 gap-3 bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-full"
             >
                 <Image
-                src="/Email.png" // Path gambar Telegram
+                src="/Web.png" // Path gambar Telegram
                 alt="Telegram"
                 width={40}
                 height={40}
               />
-              Email
+              Website
             </a>
            
           </div>

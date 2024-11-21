@@ -20,7 +20,7 @@ export const employees = [
     nfcTag: 'NFC54321',
     about: 'A passionate developer who loves building modern web applications.',
     email: 'Irfan.ariessaputra@xyzgroup.co.id',
-    whatsapp: ' wa.me/+6281380805118',
+    whatsapp: '+6281380805118',
     profilePic: '/Irfan.png',
     instagram: "https://www.instagram.com/irfan.ariessaputra?igsh=MWRoZjZqb3ZyMXc2NA==",
     twitter: "https://x.com/irfanariess",

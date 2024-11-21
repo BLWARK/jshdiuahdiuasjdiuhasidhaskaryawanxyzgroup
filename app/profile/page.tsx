@@ -146,7 +146,7 @@ const ProfilePage = () => {
             <a
                     
 
-              href={`${employee.whatsapp}`}
+            href={`https://wa.me/${employee.whatsapp.replace(/\D/g, '')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-white w-[380px] h-[65px] flex justify-center items-center gap-3 bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-full "
@@ -160,7 +160,7 @@ const ProfilePage = () => {
               Whatsapp
             </a>
             <a
-              href={`${employee.email}`}
+              href={`mailto:${employee.email}`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-white  w-[380px] h-[65px] flex justify-center items-center mt-5 gap-3 bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-full"

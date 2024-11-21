@@ -1,8 +1,9 @@
 'use client';
 
-import { useSearchParams } from 'next/navigation'; // Hook untuk query parameter
+import React, { Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { employees } from '../../data/Employees';
-import Image from 'next/image'; // Import next/image
+import Image from 'next/image';
 
 const ProfilePage = () => {
   const searchParams = useSearchParams();
@@ -17,7 +18,7 @@ const ProfilePage = () => {
     return (
       <div className="p-4 text-center">
         <h1 className="text-xl font-bold">Employee Not Found</h1>
-        <p>Sorry, we couldn&#39;t find the employee you&#39;re looking for.</p>
+        <p>Sorry, we couldn't find the employee you're looking for.</p>
       </div>
     );
   }
@@ -30,7 +31,7 @@ const ProfilePage = () => {
             src={employee.profilePic}
             alt={`${employee.name}'s profile`}
             className="rounded-full object-cover"
-            fill // Menggunakan mode fill untuk memenuhi elemen container
+            fill // Memenuhi elemen pembungkus
           />
         </div>
         <h1 className="text-2xl font-bold">{employee.name}</h1>
@@ -56,4 +57,10 @@ const ProfilePage = () => {
   );
 };
 
-export default ProfilePage;
+export default function Page() {
+  return (
+    <Suspense fallback={<div>Loading profile...</div>}>
+      <ProfilePage />
+    </Suspense>
+  );
+}

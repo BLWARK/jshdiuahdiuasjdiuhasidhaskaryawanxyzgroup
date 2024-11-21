@@ -18,7 +18,7 @@ const ProfilePage = () => {
     return (
       <div className="p-4 text-center">
         <h1 className="text-xl font-bold">Employee Not Found</h1>
-        <p>Sorry, we couldn't find the employee you're looking for.</p>
+        <p>Sorry, we couldn&apost find the employee you're looking for.</p>
       </div>
     );
   }
@@ -29,7 +29,7 @@ const ProfilePage = () => {
         <div className="relative w-32 h-32 mx-auto">
           <Image
             src={employee.profilePic}
-            alt={`${employee.name}'s profile`}
+            alt={`${employee.name}&aposs profile`}
             className="rounded-full object-cover"
             fill // Memenuhi elemen pembungkus
           />

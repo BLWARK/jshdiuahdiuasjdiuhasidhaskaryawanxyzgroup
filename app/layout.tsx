@@ -19,8 +19,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} bg-gray-100 text-gray-900`}>
-        <div className="mx-auto max-w-[375px] w-full min-h-screen bg-white shadow-md">
+      <body className={`${poppins.className} bg-gray-700 text-white`}>
+        <div className="mx-auto max-w-[400px] w-full min-h-screen bg-gradient-to-t from-pink-900 to-pink-950 shadow-md">
           {children}
         </div>
       </body>

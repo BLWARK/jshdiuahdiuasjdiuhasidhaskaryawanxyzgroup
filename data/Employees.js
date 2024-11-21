@@ -1,13 +1,18 @@
 export const employees = [
   {
     id: 1,
-    name: 'Rhonald',
+    name: 'Rhonald Bastian',
     position: 'Developer',
     nfcTag: 'NFC12345',
     about: 'A seasoned manager with over 10 years of experience in operations and strategy.',
     email: 'rhonald@example.com',
     whatsapp: '+621234567890',
-    profilePic: '/rhonald.jpg', // Path ke gambar
+    profilePic: '/rhonald.jpg', // Path ke gambar profil
+    banner: '/BannerRN.webp', // Path ke banner
+    instagram: "https://www.instagram.com/irfan.ariessaputra?igsh=MWRoZjZqb3ZyMXc2NA==",
+    twitter: "https://x.com/irfanariess",
+    telegram: "http://t.me/NuclearOmega",
+    linkedin: "https://www.linkedin.com/in/irfan-ariessaputra-38a4ab21b/",
   },
   {
     id: 2,
@@ -18,6 +23,7 @@ export const employees = [
     email: 'irfan@example.com',
     whatsapp: '+621987654321',
     profilePic: '/images/irfan.jpg',
+    banner: '/images/banners/irfan-banner.jpg',
   },
   {
     id: 3,
@@ -28,6 +34,7 @@ export const employees = [
     email: 'surya@example.com',
     whatsapp: '+621555667788',
     profilePic: '/images/surya.jpg',
+    banner: '/images/banners/surya-banner.jpg',
   },
   {
     id: 4,
@@ -38,5 +45,6 @@ export const employees = [
     email: 'adi@example.com',
     whatsapp: '+621223344556',
     profilePic: '/images/adi.jpg',
+    banner: '/images/banners/adi-banner.jpg',
   },
 ];

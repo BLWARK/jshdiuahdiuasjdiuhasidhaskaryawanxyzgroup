@@ -45,7 +45,7 @@ const ProfilePage = () => {
           rel="noopener noreferrer"
           className="text-green-500 underline block"
         >
-          WhatsApp: {employee.whatsapp}
+          WhatsApp:d {employee.whatsapp}
         </a>
       </div>
     </div>

@@ -36,7 +36,7 @@ export const employees = [
     about: 'A creative designer with a keen eye for detail.',
     email: ' jimmy.lizardo@xyzgroup.co.id',
     whatsapp: 'wa.me/+628161900907',
-    profilePic: '/JL.jpg',
+    profilePic: '/JL.png',
     instagram: "https://www.instagram.com/irfan.ariessaputra?igsh=MWRoZjZqb3ZyMXc2NA==",
     twitter: "https://x.com/jimmylizardo",
     telegram: "https://www.instagram.com/jimmylizardo/",

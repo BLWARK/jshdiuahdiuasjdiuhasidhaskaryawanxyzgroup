@@ -2,12 +2,12 @@ export const employees = [
   {
     id: 1,
     name: 'Rhonald',
-    position: 'Manager',
+    position: 'Developer',
     nfcTag: 'NFC12345',
     about: 'A seasoned manager with over 10 years of experience in operations and strategy.',
     email: 'rhonald@example.com',
     whatsapp: '+621234567890',
-    profilePic: '/images/rhonald.jpg', // Path ke gambar
+    profilePic: '/rhonald.jpg', // Path ke gambar
   },
   {
     id: 2,

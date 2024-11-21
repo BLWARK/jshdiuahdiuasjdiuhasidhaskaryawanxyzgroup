@@ -2,6 +2,7 @@
 
 import { useSearchParams } from 'next/navigation'; // Hook untuk query parameter
 import { employees } from '../../data/Employees';
+import Image from 'next/image'; // Import next/image
 
 const ProfilePage = () => {
   const searchParams = useSearchParams();
@@ -16,7 +17,7 @@ const ProfilePage = () => {
     return (
       <div className="p-4 text-center">
         <h1 className="text-xl font-bold">Employee Not Found</h1>
-        <p>Sorry, we couldn't find the employee you're looking for.</p>
+        <p>Sorry, we couldn&#39;t find the employee you&#39;re looking for.</p>
       </div>
     );
   }
@@ -24,11 +25,14 @@ const ProfilePage = () => {
   return (
     <div className="p-4">
       <div className="bg-white p-6 shadow-md rounded-md text-center space-y-4">
-        <img
-          src={employee.profilePic}
-          alt={`${employee.name}'s profile`}
-          className="w-32 h-32 mx-auto rounded-full object-cover"
-        />
+        <div className="relative w-32 h-32 mx-auto">
+          <Image
+            src={employee.profilePic}
+            alt={`${employee.name}'s profile`}
+            className="rounded-full object-cover"
+            fill // Menggunakan mode fill untuk memenuhi elemen container
+          />
+        </div>
         <h1 className="text-2xl font-bold">{employee.name}</h1>
         <p className="text-sm text-gray-600">{employee.position}</p>
         <p className="text-xs text-gray-500">NFC Tag: {employee.nfcTag}</p>
@@ -45,7 +49,7 @@ const ProfilePage = () => {
           rel="noopener noreferrer"
           className="text-green-500 underline block"
         >
-          WhatsApp:d {employee.whatsapp}
+          WhatsApp: {employee.whatsapp}
         </a>
       </div>
     </div>

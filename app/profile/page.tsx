@@ -51,7 +51,7 @@ const ProfilePage = () => {
 
         {/* Foto Profil */}
         <div className="absolute top-[150px] left-1/2 transform -translate-x-1/2">
-          <div className="w-[180px] h-[180px] relative rounded-full overflow-hidden border-4 border-white">
+          <div className="w-[180px] h-[180px] relative rounded-full overflow-hidden border-4 border-cyan-400">
             <Image
               src={employee.profilePic}
               alt={`${employee.name}&apos;s profile`}
@@ -63,7 +63,7 @@ const ProfilePage = () => {
 
         {/* Informasi Karyawan */}
         <div className="flex flex-col justify-center items-center gap-4 py-20 px-3">
-          <div className="flex flex-col gap-4 mt-5">
+          <div className="flex flex-col gap-4 mt-4">
             <h1 className="text-2xl font-bold">{employee.name}</h1>
             <p className="text-md -mt-4 text-white">{employee.position}</p>
             
@@ -189,8 +189,9 @@ const ProfilePage = () => {
             </a>
            
           </div>
-          <a href='https://xyzgroup.co.id' target="_blank"
-              rel="noopener noreferrer" className="text-[14px] italic mt-10 flex bottom-0 relative ">www.xyzgroup.co.id</a>
+          <div className="py-5 flex justify-center items-center text-[10px] italic font-light text-white">
+        <p>© Copyrights 2024 XYZ Creative Group All rights reserved</p>
+      </div>
         </div>
       </div>
     </div>

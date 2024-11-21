@@ -29,14 +29,24 @@ const ProfilePage = () => {
         {/* Banner */}
         <div className="w-full h-[250px] bg-gray-800 relative">
           {/* Gambar Banner */}
-          <Image
+          {/* <Image
             src={employee.banner} // Gunakan banner yang sesuai dengan karyawan
             alt="Banner"
             className="object-cover"
             fill
-          />
+          /> */}
+           <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/BN1.mp4" type="video/mp4" />
+        Browser Anda tidak mendukung video.
+      </video>
           {/* Overlay Hitam */}
-          <div className="absolute inset-0 bg-black opacity-50"></div>
+          <div className="absolute inset-0 bg-black opacity-10"></div>
         </div>
 
         {/* Foto Profil */}
@@ -57,7 +67,7 @@ const ProfilePage = () => {
             <h1 className="text-2xl font-bold">{employee.name}</h1>
             <p className="text-md -mt-4 text-white">{employee.position}</p>
             
-            <p className="text-white font-thin text-[14px] ">{employee.about}</p>
+            
           </div>
 
            {/* Ikon Media Sosial */}
@@ -132,32 +142,41 @@ const ProfilePage = () => {
          
 
           {/* Tombol Tambahan */}
-          <div className="mt-10">
+          <div className="mt-5">
             <a
-              href={`${employee.instagram}`}
+                    
+
+              href={`${employee.whatsapp}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white underline block px-[120px] py-5 bg-blue-300 rounded-full"
+              className="text-white w-[380px] h-[65px] flex justify-center items-center gap-3 bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-full "
             >
-              {employee.whatsapp}
+                 <Image
+                src="/WA.png" // Path gambar Telegram
+                alt="Telegram"
+                width={40}
+                height={40}
+              />
+              Whatsapp
             </a>
             <a
-              href={`${employee.telegram}`}
+              href={`${employee.email}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white underline block px-[120px] mt-5 py-5 bg-blue-300 rounded-full"
+              className="text-white  w-[380px] h-[65px] flex justify-center items-center mt-5 gap-3 bg-gradient-to-bl from-cyan-200 to-cyan-600 rounded-full"
             >
-              {employee.whatsapp}
+                <Image
+                src="/Email.png" // Path gambar Telegram
+                alt="Telegram"
+                width={40}
+                height={40}
+              />
+              Email
             </a>
-            <a
-              href={`https://wa.me/${employee.whatsapp}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white underline block px-[120px] mt-5 py-5 bg-blue-300 rounded-full"
-            >
-              {employee.whatsapp}
-            </a>
+           
           </div>
+          <a href='https://xyzgroup.co.id' target="_blank"
+              rel="noopener noreferrer" className="text-[14px] italic mt-10 flex bottom-0 relative ">www.xyzgroup.co.id</a>
         </div>
       </div>
     </div>

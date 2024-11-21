@@ -56,32 +56,33 @@ const ProfilePage = () => {
           <div className="flex flex-col gap-4 mt-5">
             <h1 className="text-2xl font-bold">{employee.name}</h1>
             <p className="text-md -mt-4 text-white">{employee.position}</p>
+            
             <p className="text-white font-thin text-[14px] ">{employee.about}</p>
           </div>
 
            {/* Ikon Media Sosial */}
            <div className="flex justify-center items-center gap-5 mt-5">
             <a
-              href="https://telegram.org"
+              href={`${employee.telegram}`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10"
             >
               <Image
-                src="/images/icons/telegram.png" // Path gambar Telegram
+                src="/Telegram.png" // Path gambar Telegram
                 alt="Telegram"
                 width={40}
                 height={40}
               />
             </a>
             <a
-              href="https://instagram.com"
+              href={`${employee.instagram}`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10"
             >
               <Image
-                src="/images/icons/instagram.png" // Path gambar Instagram
+                src="/Instagram.png" // Path gambar Instagram
                 alt="Instagram"
                 width={40}
                 height={40}
@@ -94,7 +95,7 @@ const ProfilePage = () => {
               className="w-10 h-10"
             >
               <Image
-                src="/images/icons/twitter.png" // Path gambar Twitter
+                src="/Xtwit.png" // Path gambar Twitter
                 alt="Twitter"
                 width={40}
                 height={40}
@@ -107,7 +108,7 @@ const ProfilePage = () => {
               className="w-10 h-10"
             >
               <Image
-                src="/images/icons/linkedin.png" // Path gambar LinkedIn
+                src="/Linkedin.png" // Path gambar LinkedIn
                 alt="LinkedIn"
                 width={40}
                 height={40}
@@ -122,11 +123,11 @@ const ProfilePage = () => {
           
 
           
-          <div className="w-full px-5 py-5 gap-3 flex flex-col justify-center items-center text-left font-bold">
+          {/* <div className="w-full px-5 py-5 gap-3 flex flex-col justify-center items-center text-left font-bold">
             <p className="text-white text-[14px]">Phone: {employee.whatsapp}</p>
             <p className="text-white text-[14px]">Email: {employee.whatsapp}</p>
             <p className="text-white text-[14px]">Address: {employee.whatsapp}</p>
-          </div>
+          </div> */}
 
          
 

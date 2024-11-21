@@ -1,0 +1,42 @@
+export const employees = [
+  {
+    id: 1,
+    name: 'Rhonald',
+    position: 'Manager',
+    nfcTag: 'NFC12345',
+    about: 'A seasoned manager with over 10 years of experience in operations and strategy.',
+    email: 'rhonald@example.com',
+    whatsapp: '+621234567890',
+    profilePic: '/images/rhonald.jpg', // Path ke gambar
+  },
+  {
+    id: 2,
+    name: 'Irfan',
+    position: 'Developer',
+    nfcTag: 'NFC54321',
+    about: 'A passionate developer who loves building modern web applications.',
+    email: 'irfan@example.com',
+    whatsapp: '+621987654321',
+    profilePic: '/images/irfan.jpg',
+  },
+  {
+    id: 3,
+    name: 'Surya',
+    position: 'Designer',
+    nfcTag: 'NFC11223',
+    about: 'A creative designer with a keen eye for detail.',
+    email: 'surya@example.com',
+    whatsapp: '+621555667788',
+    profilePic: '/images/surya.jpg',
+  },
+  {
+    id: 4,
+    name: 'Adi',
+    position: 'HR',
+    nfcTag: 'NFC44556',
+    about: 'An experienced HR professional specializing in talent acquisition.',
+    email: 'adi@example.com',
+    whatsapp: '+621223344556',
+    profilePic: '/images/adi.jpg',
+  },
+];
